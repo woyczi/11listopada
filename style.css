@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', cursive;
+    background-color: #222;
+    color: #ddd;
+ }
+ 
+ .cards {
+    display: flex;
+    position: absolute;
+    width: 1200px;
+ }
+ 
+ .card {
+    position: relative;
+    margin: 60px;
+    height: 800px;
+    width: 50%;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 25px #111;
+ }
+ 
+ .one {
+    background-image: url('https://cdn.pixabay.com/photo/2023/10/11/18/59/girl-8309312_1280.jpg');
+ }
+ 
+ 
+ .two {
+    background-image: url('https://cdn.pixabay.com/photo/2023/10/07/23/39/girl-8301168_1280.png');
+ }
+ 
+ 
+
+ button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 46px;
+    cursor: crosshair;
+    z-index: 10;
+ }
+ 
+ .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 80px 30px;
+    background-color: rgba(0,0,0, .85);
+    color: #fff;
+    clip-path: circle(0% at 50% 50%);
+    transition: all .8s;
+ }
+ 
+ h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+ }
+ 
+ button:hover ~ .text {
+    clip-path: circle(100% at 50% 50%);
+ }
+
+ h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-bottom: 4px solid #ddd;
+ }
+
+ img {
+    width: 60px;
+    display: flex;
+ }
+
+ 
